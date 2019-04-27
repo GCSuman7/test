@@ -1,0 +1,30 @@
+<% include partials/header %>
+
+<div class="container">
+  <form method="POST" action="/admin/postlogin" id="regisform" enctype="multipart/form-data">
+    <div class="row">
+      <h2 style="text-align:center">multer</h2>
+      
+
+     <%= typeof msg != 'undefined' ? msg : '' %>
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        
+        <input type="file" name="LoginPhoto" id="LoginPhoto" accept="image/*" multiple>
+        <input type="submit" value="Login">
+      </div>
+
+    </div>
+  <%= message %>
+  </form>
+</div>
+
+
+
+
+
+
+<% include partials/footer %>
